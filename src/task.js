@@ -17,9 +17,27 @@ class Task {
 }
 
 module.exports = Task;
+
 this.labels = [];
 
 addLabel(label) {
         this.labels.push(label);
     }
 }
+
+// В конструктор после this.createdAt
+this.priority = 'medium';
+
+// Новый метод
+setPriority(priority) {
+    const validPriorities = ['low', 'medium', 'high', 'urgent'];
+    if (validPriorities.includes(priority)) {
+        this.priority = priority;
+        return true;
+    }
+    return false;
+}
+
+// Добавить в module.exports
+//
+// adding a maximum limit for labels (e.g., 5 per task)
