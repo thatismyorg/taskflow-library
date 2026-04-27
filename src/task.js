@@ -17,3 +17,9 @@ class Task {
 }
 
 module.exports = Task;
+this.labels = [];
+
+addLabel(label) {
+        this.labels.push(label);
+    }
+}
