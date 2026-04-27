@@ -6,3 +6,5 @@ describe('Task Priority', () => {
         expect(task.priority).toBe('high');
     });
 });
+
+// Missing tests for the addLabel method 

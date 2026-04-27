@@ -32,3 +32,5 @@ setPriority(priority) {
 }
 
 // Добавить в module.exports
+//
+// adding a maximum limit for labels (e.g., 5 per task)
